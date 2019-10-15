@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 Use Illuminate\Http\Request;
 use App\Reservation;
 use App\ConferenceRoom;
-
+use Carbon\Carbon;
 
 class ReservationController extends Controller
 {
 
     public function index(){
 
-        return Reservation::all(); 
+        return Reservation::whereDate('start_time_date', Carbon::today())->get();
     }
 
     public function store(Request $request){
