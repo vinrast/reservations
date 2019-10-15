@@ -4,9 +4,9 @@
 
 ## Instalação
 
-1.- Clonar o repositório de https://github.com/vinrast/reservations.git
-2.- Instale as dependências necessárias com o comando "Composer Install"
-3.- Configure a conexão do seu banco de dados no seu arquivo ".env"
+1.- Clonar o repositório de https://github.com/vinrast/reservations.git  
+2.- Instale as dependências necessárias com o comando "Composer Install"  
+3.- Configure a conexão do seu banco de dados no seu arquivo ".env"  
 
 ## Migrações e dados de teste
 
@@ -21,7 +21,7 @@ Como outra opção, o arquivo db.sql é anexado à raiz do projeto para importa�
 
 Este método permite que você obtenha todos os horários do dia.
 
-Response: 200  
+Response: 200
 
     body:
         [
@@ -110,6 +110,7 @@ URL_Parameters:
     id: int (required) Identificador da agendamento, 
 
 Response 200
+
     Body:
         {
             "message": "reserva cancelada com sucesso",
@@ -124,7 +125,7 @@ Response 200
             }
         }
 
-Response: 422  
+Response: 422
 
     body:
         {
@@ -145,7 +146,8 @@ Response: 422
 Este método permite obter todas as salas de reunião.  
 
 
-Response: 200  
+Response: 200
+
     body:
     [
         {
